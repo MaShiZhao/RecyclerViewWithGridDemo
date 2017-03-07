@@ -22,8 +22,8 @@ public class MainActivity extends AppCompatActivity
     private MyPullSwipeRefresh myPullSwipeRefresh;
     private MyPullRecyclerView recyclerView;
     private List<InformationResult.DataBean.ListBean> dataList;
-//    private String url = "http://hbsi.gkk.cn/Mobile/Chip/newsListAction?deviceId=861735031544595&mid=0&preNum=40&page=1&oauth_token=&oauth_token_secret=";
-    private String url = "http://192.168.3.6:88/Mobile/Chip/newsListAction?deviceId=861735031544595&mid=0&preNum=40&page=1&oauth_token=&oauth_token_secret=";
+    private String url = "http://hbsi.gkk.cn/Mobile/Chip/newsListAction?deviceId=861735031544595&mid=0&preNum=40&page=1&oauth_token=&oauth_token_secret=";
+//    private String url = "http://192.168.3.6:88/Mobile/Chip/newsListAction?deviceId=861735031544595&mid=0&preNum=40&page=1&oauth_token=&oauth_token_secret=";
     private InformationDelegate informationDelegate;
     private MyInformationAdapter adapter;
 
@@ -89,7 +89,7 @@ public class MainActivity extends AppCompatActivity
                     adapter.setTotalPage(14);
 
                     List<InformationResult.DataBean.ListBean> dataList = resultBean.getData().getList();
-//                    dataList.addAll(resultBean.getData().getList());
+                    dataList.addAll(resultBean.getData().getList());
                     //刷新后的数据设置
                     adapter.setPullData(dataList);
                 }else{
