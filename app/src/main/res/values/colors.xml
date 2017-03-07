@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#3F51B5</color>
+    <color name="colorPrimaryDark">#303F9F</color>
+    <color name="colorAccent">#FF4081</color>
+    <!-- 第一主题色 -->
+    <color name="first_theme">#5baef5</color>
+    <!-- 第二主题色 -->
+    <color name="second_theme">#6388ae</color>
+    <!--========================================================================================================= -->
+
+
+    <!-- 所有字体用font_颜色值 命名 -->
+    <color name="font_gray">#bbbbbb</color>
+    <color name="font_dark_black">#3e3a39</color>
+    <color name="font_dark_black2">#525252</color>
+
+    <!--========================================================================================================= -->
+    <color name="trans_half">#50000000</color>
+    <color name="trans_eight">#80000000</color>
+
+    <!-- 所有背景用bg_颜色值 命名 -->
+    <color name="bg_gray">#F0F2F6</color>
+    <color name="bg_white">#FFFFFF</color>
+    <color name="bg_green">#4bd865</color>
+    <color name="bg_ripple">#E2E2E2</color>
+    <color name="bg_red">#F55F62</color>
+    <color name="bg_dark_gray">#C2C8CC</color>
+    <color name="bg_blue">#05B0F4</color>
+    <color name="bg_touming">#55ffffff</color>
+
+    <!--海报主题色-->
+    <color name="poster_template1">#9DBAB0</color>
+    <color name="poster_template2">#9AAC95</color>
+    <color name="poster_template3">#B9BA9D</color>
+    <color name="poster_template4">#ACA095</color>
+    <color name="poster_template5">#C1A7B7</color>
+    <color name="poster_template6">#B0B9C7</color>
+    <color name="poster_template7">#9EA3BC</color>
+    <color name="poster_template8">#ADA0C0</color>
+    <color name="poster_template9">#E5E5E5</color>
+
+    <!--自定义吐司背景-->
+    <color name="bg_toast">#AA000000</color>
+
+    <color name="lan11_new">#5faff2</color>
+    <color name="style_lv">#5adfcf</color>
+    <color name="style_lan">#5faff2</color>
+    <color name="analysis_black">#525252</color>
+    <color name="card_huang">#FDB901</color>
+    <color name="bg_light_gray">#F5F8FE</color>
+    <color name="progress_bj_new">#d8d8d8</color>
+
+</resources>
