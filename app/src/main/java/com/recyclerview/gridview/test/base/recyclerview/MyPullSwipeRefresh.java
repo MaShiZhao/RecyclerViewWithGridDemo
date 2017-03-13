@@ -9,7 +9,6 @@ import android.view.ViewConfiguration;
 
 import com.recyclerview.gridview.test.base.R;
 import com.recyclerview.gridview.test.base.recyclerview.adapter.BaseRecyclerAdapter;
-import com.recyclerview.gridview.test.base.recyclerview.adapter.PullRefreshDelegate;
 
 
 /**
@@ -86,76 +85,5 @@ public class MyPullSwipeRefresh extends SwipeRefreshLayout
                 R.color.first_theme);
         setSize(SwipeRefreshLayout.DEFAULT);
     }
-
-
-    /**
-     * 是否可以开始刷新
-     *
-     * @return
-     */
-    public Boolean beginRefresh()
-    {
-        if (mBaserAdapter == null)
-        {
-            return false;
-        } else
-        {
-            setRefreshing(true);
-            mBaserAdapter.setFooterCount(0);
-            mBaserAdapter.notifyDataSetChanged();
-            return true;
-        }
-    }
-
-    /**
-     * 刷新成功调用
-     *
-     * @param dataCount
-     */
-    public void refreshSuccess(int dataCount)
-    {
-        if (mBaserAdapter != null)
-        {
-            if (dataCount == 0)
-            {
-                mBaserAdapter.setFooterCount(0);
-            } else
-            {
-                mBaserAdapter.setFooterCount(1);
-            }
-            ((PullRefreshDelegate) mBaserAdapter.getBaseDelegate()).setDataCount(dataCount);
-            mBaserAdapter.notifyDataSetChanged();
-            mBaserAdapter.notifyItemRemoved(mBaserAdapter.getItemCount());
-            setRefreshing(false);
-        }
-    }
-
-    public void refreshSuccess()
-    {
-        if (mBaserAdapter != null)
-        {
-            setRefreshing(false);
-        }
-    }
-    /**
-     * 刷新失败调用
-     */
-    public void refreshFailed()
-    {
-        if (mBaserAdapter != null)
-        {
-            mBaserAdapter.setFooterCount(1);
-            mBaserAdapter.notifyDataSetChanged();
-            setRefreshing(false);
-        }
-    }
-
-    public void setBaserAdapter(BaseRecyclerAdapter mBaserAdapter)
-    {
-        this.mBaserAdapter = mBaserAdapter;
-    }
-
-
-
 
 }

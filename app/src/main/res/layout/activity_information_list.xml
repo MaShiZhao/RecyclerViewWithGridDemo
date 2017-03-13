@@ -15,7 +15,7 @@
         android:layout_height="match_parent"
          android:visibility="visible">
 
-        <com.recyclerview.gridview.test.base.recyclerview.MyPullRecyclerView
+        <com.recyclerview.gridview.test.base.recyclerview.MyRecyclerView
             android:id="@+id/recycler"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
@@ -24,7 +24,7 @@
             app:spanCount="2"
             >
 
-        </com.recyclerview.gridview.test.base.recyclerview.MyPullRecyclerView>
+        </com.recyclerview.gridview.test.base.recyclerview.MyRecyclerView>
 
     </com.recyclerview.gridview.test.base.recyclerview.MyPullSwipeRefresh>
 
